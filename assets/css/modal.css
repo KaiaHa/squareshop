@@ -1,4 +1,48 @@
-/* social media modal box */
+/* modal boxes, show function and general box */
+.sq-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.sq-modal-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-top: solid .3em var(--info);
+}
+.sq-modal-content{
+     padding: 2rem; 
+}
+.sq-close-button{
+    color:var(--text-default);
+    float: right;
+    width: 1.5rem;
+    font-size:2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sq-modal-show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/* close button on hover no longer in use.
+ .sq-close-button:hover {
+    background-color: var(--danger);
+}  */
+/* social media modal box.. modal window no longer in use or doesnt work as it should. */
 .sq-modal-social-media{
     position: fixed;
     left: 0;
@@ -34,6 +78,8 @@
     flex-wrap: wrap;
     margin: 2rem;
   }
+  /* social media modal box end... */
+    /* modal for user page. no longer in use. 
   .sq-modal-user-page{
     position: fixed;
     left: 0;
@@ -46,7 +92,7 @@
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   }
-  .sq-modal-content-user{
+    .sq-modal-content-user{
     justify-content:center;
     position: absolute;
     height: 23rem;
@@ -60,47 +106,4 @@
     margin: 2rem;
     margin-top: 0rem;
   }
-
-
-
-.sq-modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-.sq-modal-body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-top: solid .3em var(--info);
-}
-.sq-modal-content{
-     padding: 2rem; 
-}
-.sq-close-button{
-    color:var(--text-default);
-    float: right;
-    width: 1.5rem;
-    font-size:2rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-}
-.sq-close-button:hover {
-    background-color: var(--danger);
-} 
-.sq-modal-show {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+ */
